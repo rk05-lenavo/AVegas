@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+    }
+.grid-container {
+  display: grid;
+  grid-template-columns: 57% 40% ;
+  grid-column-gap: 50px;
+  padding: 10px;
+}
+.grid-container > div1 {
+
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.grid-container > div2 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: inherit;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 20px;
+
+}
+
+</style>
+</head>
+<body>
+<div class="header"><h1>Summary Of Your Paragraph :</h1></div>
+<div class="grid-container">
+    <div1 class="item 1" style="background-color: darksalmon; color: black"><h1>Text:</h1>
+        {{write}}</div1>
+    <div2 class="item 2" style="background-color: darksalmon; color: black"><h1>Summary:</h1>
+        {{summary}}</div2>
+</div>
+<input type="button" value="Go back!" onclick="history.back()" style="color: saddlebrown; background-color: bisque; padding: 10px 15px;
+    align:center;">
+</body>
+</html>
+
+
+
+{% block content %}
+
+
+
+
+{% endblock %}
